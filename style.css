@@ -1,0 +1,97 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	background-color: #009BAA;
+	min-height: 50px;
+
+}
+.container{
+	width: 55%;
+	border: 1px solid black;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.menu1,.menu2,.menu3,.menu4,.menu5{
+	float:left;
+	padding: 0px 50px;
+	border: 1px solid black;
+	/*animation:move .3s ease;*/
+	animation-name: move;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	font-size: 30px;
+
+}
+@keyframes menu1{
+	0%{background-color: red;}
+	20%{background-color: green;}
+	50%{background-color: aqua;}
+	80%{background-color: pink;}
+	100%{background-color: aqua;}
+}
+.menu2{
+	float:left;
+	padding: 0px 50px;
+	border: 1px solid black;
+	font-size: 30px;
+}
+.menu3{
+	float:left;
+	padding: 0px 50px;
+	border: 1px solid black;
+	background-color: white;
+	font-size: 30px;
+}
+.menu4{
+	float:left;
+	padding: 0px 50px;
+	border: 1px solid black;
+	font-size: 30px;
+}
+.menu5{
+	float:left;
+	padding: 0px 50px;
+	border: 1px solid black;
+	font-size: 30px;
+}
+.menu1:hover {
+	background-color: red;
+}
+.menu2:hover {
+	background-color: red;
+	animation:move .3s ease;
+}
+.menu3:hover {
+	background-color: red;
+	animation:move .3s ease;
+}
+.menu4:hover {
+	background-color: yellow;
+	animation:move .3s ease;
+}
+
+.menu5:hover {
+	background-color: red;
+	animation:move .3s ease;
+}
+
+@keyframes move{
+  0%{
+    transform:rotate(360deg)
+  }
+  30%{
+    transform:rotate(-360deg)
+  }
+  60%{
+    transform:rotate(360deg)
+  }
+  90%{
+    transform:rotate(-360deg)
+  }
+  100%{
+    transform:rotate(0deg)
+  }
+  
+}
